@@ -29,7 +29,7 @@ namespace Sample_Application
            string dbConnStr = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=firstdb;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
            SqlConnection sc = new SqlConnection(dbConnStr);     // Create a .Net framework SQL Server connection object
-                                                                // based on the connection string.
+                                                                // based on the connection string..
 
             sc.Open();                                          // Establish an opened connection to the DB
 

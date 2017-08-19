@@ -29,16 +29,16 @@ namespace Sample_Application
            string dbConnStr = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=firstdb;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
            SqlConnection sc = new SqlConnection(dbConnStr);     // Create a .Net framework SQL Server connection object
-                                                                // based on the connection string..
+                                                                // based on the connection string.
 
-            sc.Open();                                          // Establish an opened connection to the DB
+            sc.Open();                                          // Establish an opened connection to the DB.
 
             SqlDataReader reader;                               // SqlDataReaders provide sequential access to rows in 
                                                                 // a relational database table as follows:
 
             SqlCommand cmd = new SqlCommand();                  // A SqlCommand can have a variety of property values
                                                                 // but at a minimum nees a command object and
-                                                                // a connection object
+                                                                // a connection object.
             int NameID; 
 
             if (int.TryParse(m_tbID.Text, out NameID))          // This is UI code.  Good practice would separate the

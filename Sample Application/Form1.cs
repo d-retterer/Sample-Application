@@ -29,7 +29,7 @@ namespace Sample_Application
            string dbConnStr = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=firstdb;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
            SqlConnection sc = new SqlConnection(dbConnStr);     // Create a .Net framework SQL Server connection object
-                                                                // based on the connection string.
+                                                                // based on the connection string..
 
             sc.Open();                                          // Establish an opened connection to the DB.
 
@@ -38,13 +38,13 @@ namespace Sample_Application
 
             SqlCommand cmd = new SqlCommand();                  // A SqlCommand can have a variety of property values
                                                                 // but at a minimum nees a command object and
-                                                                // a connection object.
+                                                                // a connection object..
             int NameID; 
 
             if (int.TryParse(m_tbID.Text, out NameID))          // This is UI code.  Good practice would separate the
                                                                 // UI code from the Database code.  We'll do that later.
                                                                 // if the TryParse succeeds the integer value is stored
-                                                                // in NameID.  If not, TryParse returns false.
+                                                                // in NameID.  If not, TryParse returns false..
             {
 
                 cmd.CommandText = "SELECT Name FROM Names WHERE ID = " + NameID;

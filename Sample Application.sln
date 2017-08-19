@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArithmeticUnitTest", "UnitTestProject1\ArithmeticUnitTest.csproj", "{4585A113-AE5C-4E97-A995-E7532A6902C7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArithmeticUnitTest", "ArithmeticUnitTest\ArithmeticUnitTest.csproj", "{4585A113-AE5C-4E97-A995-E7532A6902C7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleArithmetic", "SampleClassLibrary\SimpleArithmetic.csproj", "{6BC81226-EA24-4159-9AA9-AA524E7AE32E}"
 EndProject

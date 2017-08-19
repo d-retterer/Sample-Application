@@ -25,7 +25,7 @@ namespace Sample_Application
             //  Beware of storing a connection string that includes a username and password for an online server
             //  in public places like this GitHub repository since that would allow everyone to see those credentials.
 
-
+           
            string dbConnStr = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=firstdb;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
            SqlConnection sc = new SqlConnection(dbConnStr);     // Create a .Net framework SQL Server connection object

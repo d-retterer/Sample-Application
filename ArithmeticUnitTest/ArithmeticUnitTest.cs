@@ -41,6 +41,7 @@ namespace ArithmeticUnitTest
         public void ProductTest()
         {
             HarderArithmetic h = new HarderArithmetic();
+            // test ArithmeticClassLibrary HarderArithmetic.Product one way
             Assert.IsTrue(10 == h.Product(5, 2));
         }
 
@@ -48,6 +49,8 @@ namespace ArithmeticUnitTest
         public void QuotientTest()
         {
             HarderArithmetic h = new HarderArithmetic();
+            // test ArithmeticClassLIbrary HarderArithmetic.Quotient for
+            // quotients with and without a remainder.
             Assert.IsTrue(2 == h.Quotient(5, 2));
             Assert.IsTrue(2 == h.Quotient(4, 2));
         }
